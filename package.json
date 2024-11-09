@@ -2,11 +2,14 @@
   "name": "api-academia",
   "version": "1.0.0",
   "description": "Gympass style app.",
+  "type":"module",
   "main": "index.js",
   "scripts": {
     "dev": "tsx watch src/server.ts",
     "start": "node build/server.js",
-    "build": "tsup src --out-dir build"
+    "build": "tsup src --out-dir build",
+    "test": "vitest run",
+    "test:watch": "vitest"
   },
   "keywords": [],
   "author": "",
@@ -21,7 +24,9 @@
     "tsup": "^8.3.0",
     "tsx": "^4.19.1",
     "typescript": "^5.6.3",
-    "typescript-eslint": "8.8.1"
+    "typescript-eslint": "8.8.1",
+    "vite-tsconfig-paths": "5.1.1",
+    "vitest": "2.1.4"
   },
   "dependencies": {
     "@prisma/client": "5.20.0",
