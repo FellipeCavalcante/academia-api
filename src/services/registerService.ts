@@ -17,7 +17,7 @@ export class RegisterService {
   constructor(private usersRepository: UsersRepository) {}
 
   async execute({ name, email, password }: RegisterServiceRequest): Promise<RegisterServiceResponse> {
-    const password_hash = await bcrypt.hash(password, 6);  // Alterado para bcrypt.hash
+    const password_hash = await bcrypt.hash(password, 6); 
 
     const userWithSameEmail = await this.usersRepository.findByEmail(email);
 
