@@ -1,9 +1,6 @@
 import { expect, describe, it, beforeEach, vi, afterEach } from "vitest"
 import { InMemoryCheckInsRepository } from "@/repositories/in-memory/in-memory-check-ins-repository";
-import { CheckInService } from './check-inService';
 import { FecthUserCheckInsHistory } from "./fetch-user-check-ins-history";
-
-
 
 let checkInsRepository: InMemoryCheckInsRepository;
 let sut: FecthUserCheckInsHistory;

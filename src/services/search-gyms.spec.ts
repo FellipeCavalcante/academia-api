@@ -1,9 +1,6 @@
-import { expect, describe, it, beforeEach, vi, afterEach } from "vitest"
-import { FecthUserCheckInsHistory } from "./fetch-user-check-ins-history";
+import { expect, describe, it, beforeEach } from "vitest"
 import { InMemoryGymRepository } from "@/repositories/in-memory/in-memory-gyms-repository";
 import { SearchGymService } from "./search-gyms";
-
-
 
 let gymsRepository: InMemoryGymRepository;
 let sut: SearchGymService;
