@@ -1,0 +1,18 @@
+[
+  {
+    "files": ["**/*.{js,mjs,cjs,ts}"],
+    "languageOptions": {
+      "globals": "node",
+      "parser": "@typescript-eslint/parser"
+    }
+  },
+  "@eslint/js/configs/recommended",
+  "@typescript-eslint/eslint-plugin/configs/recommended",
+  {
+    "rules": {
+      "semi": ["error", "always"],
+      "quotes": ["error", "double"],
+      "no-unused-vars": "off"
+    }
+  }
+]
